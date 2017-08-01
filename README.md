@@ -12,4 +12,4 @@ Los resultados se van a publicar en GitHub Pages a partir de la rama master. Las
 
 * JavaScript: https://github.com/cristinafsanz/angular-crud/blob/master/app.js 
 
-* Resultado: https://cristinafsanz.github.io/angular-crud/
+* Resultado: https://cristinafsanz.github.io/angular-crud/index.html
