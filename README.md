@@ -20,7 +20,7 @@ Los resultados se van a publicar en GitHub Pages a partir de la rama master. Las
 
 ### Código
 
-* <a href="https://github.com/cristinafsanz/angular-crud/blob/master/01-states/>Proyecto web</a>
+* <a href="https://github.com/cristinafsanz/angular-crud/blob/master/01-states/">Proyecto web</a>
 
 ### Resultado
 
