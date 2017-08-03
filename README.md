@@ -22,6 +22,12 @@ Los resultados se van a publicar en GitHub Pages a partir de la rama master. Las
 
 * <a href="https://github.com/cristinafsanz/angular-crud/blob/master/01-states/">Proyecto web</a>
 
+Para probar el código en local se puede instalar http-server y ejecutar dentro del proyecto:
+
+<code>npm install -g http-server</code>
+
+<code>http-server -o</code>
+
 ### Resultado
 
 * https://cristinafsanz.github.io/angular-crud/01-states/index.html#/address
