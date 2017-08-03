@@ -1,0 +1,55 @@
+<div>
+    <h1>Address Book</h1>
+    <div class="container-fluid voffset5">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-general" ui-sref="address-new">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs" >
+                        Create new Address
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div>
+        <label>Search:</label>
+        <input type="text" ng-model="vm.search" />
+    </div>
+
+    <div class="table-responsive voffset4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="person in vm.personList | filter:vm.search">
+                    <td>{{person.firstname}}</td>
+                    <td>{{person.lastname}}</td>
+                    <td>{{person.city}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="address-edit({id:person.id})"
+                                    class="no-button-syle"
+                                    uib-popover="Edit" popover-trigger="mouseenter" popover-placement="top" popover-append-to-body="true">
+                                <img class="glyphicon-images" src="content/images/glyphicon-pencil.png">
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <uib-pagination total-items="vm.totalItems" ng-model="vm.currentPage" items-per-page="vm.itemsPerPage" class="pagination-sm" boundary-link-numbers="true" ng-change="vm.setPage(vm.currentPage)" previous-text="Previous" next-text="Next" first-text="First" last-text="Last"></uib-pagination>
+    </div>
+</div>

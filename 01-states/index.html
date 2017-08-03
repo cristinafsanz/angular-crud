@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="addressApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Address book</title>
+    <meta name="description" content="Address book">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+</head>
+<body>
+    <div ui-view></div>
+
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-ui-router.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app/address/address.controller.js"></script>
+    <script src="app/address/address.service.js"></script>
+    <script src="app/address/address-new-edit.controller.js"></script>
+    <script src="app/address/address.state.js"></script>
+</body>
+</html>

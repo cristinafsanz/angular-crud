@@ -1,0 +1,36 @@
+<form name="editForm" role="form" novalidate ng-submit="vm.saveEdit()">
+
+    <div>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPolicyLabel">Create or edit a Address</h4>
+    </div>
+    <div>
+        <div class="form-group">
+            <label class="control-label" for="field_firstname">First Name</label>
+            <input type="text" class="form-control" name="firstname" id="field_firstname"
+                   ng-model="vm.person.firstname" ng-required="true"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_lastname">Last Name</label>
+            <input type="text" class="form-control" name="lastname" id="field_lastname"
+                   ng-model="vm.person.lastname" ng-required="true"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                   ng-model="vm.person.city" ng-required="true"
+                     />
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-general" data-dismiss="modal" ui-sref="address">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-general">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>
