@@ -16,28 +16,30 @@ Los resultados se van a publicar en GitHub Pages a partir de la rama master. Las
 
 * https://cristinafsanz.github.io/angular-crud/index.html
 
+## Modificaciones respecto al original
+
 Para probar todas las variaciones del código en local se puede instalar http-server y ejecutar dentro del proyecto:
 
 <code>npm install -g http-server</code>
 
 <code>http-server -o</code>
 
-## Aplicación con estados
+### Aplicación con estados
 
-### Código
+#### Código
 
 * <a href="https://github.com/cristinafsanz/angular-crud/blob/master/01-states/">Proyecto web</a>
 
-### Resultado
+#### Resultado
 
 * https://cristinafsanz.github.io/angular-crud/01-states/index.html#/address
 
-## Usar css propio en vez de Bootstrap
+### Usar css propio en vez de Bootstrap
 
-### Código
+#### Código
 
 * <a href="https://github.com/cristinafsanz/angular-crud/blob/master/02-styles/">Proyecto web</a>
 
-### Resultado
+#### Resultado
 
 * https://cristinafsanz.github.io/angular-crud/02-styles/index.html#/address
