@@ -1,0 +1,85 @@
+/*
+Common elements
+*/
+body {
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: .75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*
+table
+*/
+table {
+    width: 100%;
+}
+
+thead {
+    padding: .5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+tbody tr {
+    text-align: center;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+button {
+    cursor: pointer;
+}
+
+/*
+Address
+*/
+.address-list, .address-add-edit {
+    margin: 1rem 4rem;
+}
+
+.address-list input, .address-add-edit input {
+    padding: .7rem;
+}
+
+/*
+Address list
+*/
+
+.address-list_search {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.address-list_result {
+    clear: right;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.address-list_search input {
+    width: 15rem;
+}
+
+.address-list_result .no-results {
+    text-align: center;
+    padding: .6rem;
+    background-color: #eee;
+}
+
+/*
+Address add/edit
+*/
+
+.address-add-edit input {
+    width: 100%;
+    margin-bottom: 1rem;
+}

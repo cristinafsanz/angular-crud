@@ -1,0 +1,32 @@
+<div class="address-add-edit">
+    <form name="editForm" role="form" novalidate ng-submit="vm.saveEdit()">
+        <h1>Create or edit a Address</h1>
+        <div>
+            <label for="field_firstname">First Name</label>
+            <input type="text" name="firstname" id="field_firstname"
+                   ng-model="vm.person.firstname" ng-required="true"
+                     />
+        </div>
+        <div>
+            <label for="field_lastname">Last Name</label>
+            <input type="text" name="lastname" id="field_lastname"
+                   ng-model="vm.person.lastname" ng-required="true"
+                     />
+        </div>
+        <div>
+            <label for="field_city">City</label>
+            <input type="text" name="city" id="field_city"
+                   ng-model="vm.person.city" ng-required="true"
+                     />
+        </div>
+
+        <div>
+            <button type="button" ui-sref="address">
+                Cancel
+            </button>
+            <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

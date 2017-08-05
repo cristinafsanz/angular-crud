@@ -1,0 +1,46 @@
+<div class="address-list">
+    <h1>Address Book</h1>
+    <div class="address-list_add">
+        <button ui-sref="address-new">
+                Create new Address
+        </button>
+    </div>
+
+    <div class="address-list_result">
+        <div class="address-list_search">
+            <label>Search:</label>
+            <input type="text" ng-model="vm.search" />
+        </div>
+
+        <div class="address-list_result">
+            <div ng-if="vm.personList.length === 0" class="no-results">
+                Address Book empty.
+            </div>
+            <div ng-if="vm.personList.length > 0">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>City</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="person in vm.personList | filter:vm.search">
+                            <td>{{person.firstname}}</td>
+                            <td>{{person.lastname}}</td>
+                            <td>{{person.city}}</td>
+                            <td>
+                                <button type="submit" title="Edit"
+                                        ui-sref="address-edit({id:person.id})" >
+                                    <img src="content/images/glyphicon-pencil.png">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
