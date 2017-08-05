@@ -1,0 +1,38 @@
+<div class="book-add-edit">
+    <form name="editForm" role="form" novalidate ng-submit="vm.saveEdit()">
+        <h1>Añadir o editar libro</h1>
+        <div>
+            <label for="field_title">Título</label>
+            <input type="text" name="title" id="field_title"
+                   ng-model="vm.book.title" ng-required="true"
+                     />
+        </div>
+        <div>
+            <label for="field_autor">Autor</label>
+            <input type="text" name="autor" id="field_autor"
+                   ng-model="vm.book.autor" ng-required="true"
+                     />
+        </div>
+        <div>
+            <label for="field_isbin">ISBIN</label>
+            <input type="text" name="isbin" id="field_isbin"
+                   ng-model="vm.book.isbin" ng-required="true"
+                     />
+        </div>
+        <div>
+            <label for="field_genre">Género</label>
+            <input type="text" name="genre" id="field_genre"
+                   ng-model="vm.book.genre" ng-required="true"
+                     />
+        </div>
+
+        <div>
+            <button type="button" ui-sref="book">
+                Cancel
+            </button>
+            <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

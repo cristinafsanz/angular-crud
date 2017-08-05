@@ -1,0 +1,89 @@
+/*
+Common elements
+*/
+body {
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.home {
+    margin: 1rem 4rem;
+}
+
+/*
+tabs
+*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    float: left;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+li.active {
+    background-color: #eee;
+}
+
+/*
+tables
+*/
+table {
+    width: 100%;
+}
+
+thead {
+    padding: .5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+tbody tr {
+    text-align: center;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+/*
+Buttons
+*/
+button {
+    cursor: pointer;
+    padding: .75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*
+Links
+*/
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*
+Input
+*/
+input {
+    padding: .7rem;
+}
+
+/*
+Book user
+*/
+.book-user {
+    clear: left;
+    padding-top: .7rem;
+}

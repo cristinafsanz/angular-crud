@@ -1,0 +1,32 @@
+/*
+Book list
+*/
+.book-list_search {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.book-list_result {
+    clear: right;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.book-list_search input {
+    width: 15rem;
+}
+
+.book-list_result .no-results {
+    text-align: center;
+    padding: .6rem;
+    background-color: #eee;
+}
+
+/*
+Book add/edit
+*/
+.book-add-edit input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}

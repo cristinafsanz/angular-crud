@@ -1,0 +1,32 @@
+<div class="user-list">
+    <h1>Usuarios</h1>
+
+    <div class="user-list_result">
+
+        <div class="user-list_result">
+            <div ng-if="vm.personList.length === 0" class="no-results">
+                No hay usuarios
+            </div>
+            <div ng-if="vm.personList.length > 0">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Libros</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="person in vm.personList | filter:vm.search">
+                            <td>{{user.name}}</td>
+                            <td>
+                                <button type="submit" title="Ver libros"
+                                        ui-sref="user-detail({id:person.id})" >
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

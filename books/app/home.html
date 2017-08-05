@@ -1,0 +1,12 @@
+<div class="home">
+    <ul>
+       <li ng-repeat="tab in vm.tabs"
+           ng-class="{active: vm.isActiveTab(tab.state)}"
+           ng-click="vm.onClickTab(tab)" ui-sref="{{tab.state}}">
+           <a href="javascript:void(0)">{{tab.title}}</a>
+       </li>
+    </ul>
+   <div class="book-user">
+       <div ui-view></div>
+   </div>
+</div>
