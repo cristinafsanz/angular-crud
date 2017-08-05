@@ -9,8 +9,6 @@
 
     function stateConfig($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('home');
-
         $stateProvider
         .state('home', {
             url: '',
