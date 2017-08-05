@@ -9,8 +9,6 @@
 
     function stateConfig($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('book');
-
         $stateProvider
         .state('book', {
             parent: 'home',

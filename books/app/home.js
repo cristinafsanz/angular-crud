@@ -16,14 +16,16 @@
             state: 'user'
         }];
 
-    vm.currentTab = 'book';
+        vm.currentTab = 'book';
 
-    vm.onClickTab = function (tab) {
-        vm.currentTab = tab.state;
-    }
+        vm.onClickTab = function (tab) {
+            vm.currentTab = tab.state;
+        }
 
-    vm.isActiveTab = function(tabState) {
-        return tabState === vm.currentTab;
-    }
+        vm.isActiveTab = function(tabState) {
+            return tabState === vm.currentTab;
+        }
+
+        $state.go("book", {});
     }
 })();
