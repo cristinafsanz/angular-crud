@@ -14,6 +14,7 @@ Book list
 
 .book-list_search input {
     width: 15rem;
+    font-size: 1rem;
 }
 
 .book-list_result .no-results {
