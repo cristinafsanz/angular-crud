@@ -13,6 +13,9 @@
         .state('book', {
             parent: 'home',
             url: '/book',
+            params: {
+                init: false
+           },
             templateUrl: 'app/book/book.html',
             controller: 'BookController',
             controllerAs: 'vm'

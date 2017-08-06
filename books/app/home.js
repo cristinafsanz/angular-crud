@@ -26,6 +26,6 @@
             return tabState === vm.currentTab;
         }
 
-        $state.go("book", {});
+        $state.go("book", {init: true});
     }
 })();
