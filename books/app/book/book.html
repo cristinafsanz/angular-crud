@@ -24,6 +24,7 @@
                             <th>Autor</th>
                             <th>ISBN</th>
                             <th>Género</th>
+                            <th>Usuarios</th>
                             <th>Editar</th>
                         </tr>
                     </thead>
@@ -33,6 +34,7 @@
                             <td>{{book.author}}</td>
                             <td>{{book.ISBN}}</td>
                             <td>{{book.genre}}</td>
+                            <td>{{vm.joinUsers(book.users)}}</td>
                             <td>
                                 <button type="submit" title="Edit"
                                         ui-sref="book-edit({ISBN: book.ISBN})" >

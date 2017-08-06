@@ -9,6 +9,8 @@
         var vm = this,
             init = $state.params.init;
 
+        vm.joinUsers = joinUsers;
+
         vm.bookList = BookService.getBookList();
 
         if(init) {
@@ -17,6 +19,12 @@
             }).catch(function () {
                 vm.bookList = [];
             });
+        }
+
+        function joinUsers(users) {
+            return users.map(function(elem){
+                return elem.name;
+            }).join(", ");
         }
     }
 })();
