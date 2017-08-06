@@ -7,6 +7,11 @@
 
     function BookController($scope, $state, $stateParams, BookService) {
         var vm = this;
-        vm.bookList = BookService.getBookList();
+
+        BookService.initializeBookList().then(function () {
+            vm.bookList = BookService.getBookList();
+        }).catch(function () {
+            vm.bookList = [];
+        });
     }
 })();

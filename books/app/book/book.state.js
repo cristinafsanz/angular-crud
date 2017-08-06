@@ -26,7 +26,7 @@
         })
         .state('book-edit', {
             parent: 'home',
-            url: '/edit/:id',
+            url: '/edit/:ISBN',
             templateUrl: 'app/book/book-new-edit.html',
             controller: 'BookNewEditController',
             controllerAs: 'vm',

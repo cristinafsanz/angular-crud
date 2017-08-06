@@ -31,11 +31,11 @@
                         <tr ng-repeat="book in vm.bookList | filter:vm.search">
                             <td>{{book.title}}</td>
                             <td>{{book.author}}</td>
-                            <td>{{book.isbn}}</td>
+                            <td>{{book.ISBN}}</td>
                             <td>{{book.genre}}</td>
                             <td>
                                 <button type="submit" title="Edit"
-                                        ui-sref="book-edit({id:book.id})" >
+                                        ui-sref="book-edit({ISBN: book.ISBN})" >
                                     <img src="content/images/glyphicon-pencil.png">
                                 </button>
                             </td>
